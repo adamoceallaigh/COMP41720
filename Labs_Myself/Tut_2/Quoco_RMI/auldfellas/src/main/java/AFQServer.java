@@ -20,7 +20,7 @@ public class AFQServer {
         if (args.length == 0) {
         registry = LocateRegistry.createRegistry(1099);
         } else {
-        registry = LocateRegistry.getRegistry(host, 1099);
+        registry = LocateRegistry.getRegistry(args[0], 1099);
         } 
 
         // Create the Remote Object
