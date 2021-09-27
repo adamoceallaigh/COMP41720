@@ -4,7 +4,6 @@ package girlpower;
 import service.core.AbstractQuotationService;
 import service.core.ClientInfo;
 import service.core.Quotation;
-import service.core.QuotationService;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.
@@ -13,7 +12,7 @@ import service.core.QuotationService;
  *
 */
 
-public class GPQService extends AbstractQuotationService implements QuotationService {
+public class GPQService extends AbstractQuotationService {
     // All references are to be prefixed with an AF (e.g. AF001000)
 	public static final String PREFIX = "AF";
 	public static final String COMPANY = "Auld Fellas Ltd.";

@@ -4,7 +4,6 @@ package dodgydrivers;
 import service.core.AbstractQuotationService;
 import service.core.ClientInfo;
 import service.core.Quotation;
-import service.core.QuotationService;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.
@@ -12,7 +11,7 @@ import service.core.QuotationService;
  * @author Rem
  *
  */
-public class DDQService extends AbstractQuotationService implements QuotationService {
+public class DDQService extends AbstractQuotationService {
 	// All references are to be prefixed with an AF (e.g. AF001000)
 	public static final String PREFIX = "AF";
 	public static final String COMPANY = "Auld Fellas Ltd.";
