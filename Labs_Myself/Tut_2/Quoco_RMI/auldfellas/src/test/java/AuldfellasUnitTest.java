@@ -18,8 +18,7 @@ public class AuldfellasUnitTest {
         QuotationService afqService = new AFQService();
         try {
             registry = LocateRegistry.createRegistry(1099);
-            QuotationService quotationService = (QuotationService)
-            UnicastRemoteObject.exportObject(afqService,0);
+            QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(afqService,0);
             registry.bind(Constants.AULD_FELLAS_SERVICE, quotationService);
         } catch (Exception e) {
             System.out.println("Trouble: " + e);

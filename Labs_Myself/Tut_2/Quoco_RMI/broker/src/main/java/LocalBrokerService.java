@@ -1,4 +1,5 @@
 // Imports and Variable Declarations
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.util.LinkedList;
@@ -25,8 +26,8 @@ public class LocalBrokerService implements BrokerService{
 		
 		for (String name : service_registry.list()) {
 			if (name.startsWith("qs-")) {
-				QuotationService service = service_registry.lookup(name, QuotationService.class);
-				quotations.add(service.generateQuotation(info));
+				// Remote service = service_registry.lookup(name);
+				// quotations.add(service.generateQuotation(info));
 			}
 		}
 
