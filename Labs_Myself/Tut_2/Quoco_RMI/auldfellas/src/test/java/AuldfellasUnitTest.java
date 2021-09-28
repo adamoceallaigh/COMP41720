@@ -23,8 +23,11 @@ public class AuldfellasUnitTest {
 
         try {
 
-            // Create the RMI registry
-            registry = LocateRegistry.createRegistry(1099);
+            // Create the RMI registry if not already created
+            if (LocateRegistry.getRegistry("localhost", 1099) != null) registry = LocateRegistry.createRegistry(1099);
+
+            // Else use the RMI Registry already created
+            registry = LocateRegistry.getRegistry("localhost", 1099);
 
             // Export the stub for the Auldfellas Quotation Service object
             QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(afqService,0);
