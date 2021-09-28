@@ -1,5 +1,6 @@
 package service.core;
 
+import java.rmi.NotBoundException;
 import java.util.List;
 
 /**
@@ -8,5 +9,5 @@ import java.util.List;
  *
  */
 public interface BrokerService extends java.rmi.Remote {
-	public List<Quotation> getQuotations(ClientInfo info) throws java.rmi.RemoteException;
+	public List<Quotation> getQuotations(ClientInfo info) throws java.rmi.RemoteException, NotBoundException;
 }

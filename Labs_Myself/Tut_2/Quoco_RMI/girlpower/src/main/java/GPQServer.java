@@ -2,8 +2,6 @@
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
 import girlpower.GPQService;
-import service.core.ClientInfo;
-import service.core.Quotation;
 import service.core.QuotationService;
 import service.core.Constants;
 
@@ -16,11 +14,8 @@ public class GPQServer {
            // Connect to the RMI Registry - creating the registry will be the 
            // responsibility of the broker.
            Registry registry = null;
-           if (args.length == 0) {
-            registry = LocateRegistry.createRegistry(1099);
-           } else {
-            registry = LocateRegistry.getRegistry(args[0], 1099);
-           } 
+           registry = LocateRegistry.getRegistry("localhost", 1099);
+           
    
            // Create the Remote Object
            QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(gpqService,0);

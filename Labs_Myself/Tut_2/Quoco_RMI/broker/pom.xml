@@ -1,12 +1,12 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>Labs</groupId>
-    <artifactId>quoco-rmi-broker</artifactId>
+    <artifactId>broker</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <properties>
-        <main.class>LocalBrokerService</main.class>
+        <main.class>BrokerServer</main.class>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>Labs</groupId>
-            <artifactId>quoco-rmi-core</artifactId>
+            <artifactId>core</artifactId>
             <version>1.0</version>
         </dependency>
         

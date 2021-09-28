@@ -1,5 +1,6 @@
 // Imports and Variable Declarations
-import java.rmi.Remote;
+import java.io.Serializable;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.util.LinkedList;
@@ -9,25 +10,24 @@ import service.core.BrokerService;
 import service.core.ClientInfo;
 import service.core.Quotation;
 import service.core.QuotationService;
-import service.core.ServiceRegistry;
 
 
-public class LocalBrokerService implements BrokerService{
+public class LocalBrokerService implements BrokerService, Serializable{
 
-    ServiceRegistry service_registry;
+    Registry service_registry;
 
-    public LocalBrokerService (ServiceRegistry service_registry_init) {
+    public LocalBrokerService (Registry service_registry_init) {
         this.service_registry = service_registry_init;
     }
 
     @Override
-    public List<Quotation> getQuotations(ClientInfo info) throws RemoteException {
+    public List<Quotation> getQuotations(ClientInfo info) throws RemoteException, NotBoundException {
         List<Quotation> quotations = new LinkedList<Quotation>();
 		
 		for (String name : service_registry.list()) {
 			if (name.startsWith("qs-")) {
-				// Remote service = service_registry.lookup(name);
-				// quotations.add(service.generateQuotation(info));
+				QuotationService service = (QuotationService) service_registry.lookup(name);
+				quotations.add(service.generateQuotation(info));
 			}
 		}
 

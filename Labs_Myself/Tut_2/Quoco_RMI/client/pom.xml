@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>Labs</groupId>
-    <artifactId>quoco-rmi-client</artifactId>
+    <artifactId>client</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -15,22 +15,7 @@
 
         <dependency>
             <groupId>Labs</groupId>
-            <artifactId>quoco-rmi-core</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>Labs</groupId>
-            <artifactId>quoco-rmi-broker</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>Labs</groupId>
-            <artifactId>quoco-rmi-auldfellas</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>Labs</groupId>
-            <artifactId>quoco-rmi-girlpower</artifactId>
+            <artifactId>core</artifactId>
             <version>1.0</version>
         </dependency>
 

@@ -2,28 +2,30 @@
 // Imports and Variable Declarations
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
-import dodgydrivers.DDQService;
-import service.core.ClientInfo;
-import service.core.Quotation;
-import service.core.QuotationService;
-import service.core.Constants;
 
-public class DDQServer {
+import service.core.BrokerService;
+import service.core.Constants;
+import service.core.QuotationService;
+
+public class BrokerServer {
    
     public static void main(String[] args) {
-     QuotationService ddqService = new DDQService();
 
      try {
+        
         // Connect to the RMI Registry - creating the registry will be the 
         // responsibility of the broker.
         Registry registry = null;
-        registry = LocateRegistry.getRegistry("localhost", 1099);
+        registry = LocateRegistry.createRegistry(1099);
+      
 
         // Create the Remote Object
-        QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(ddqService,0);
+        LocalBrokerService broker_service = new LocalBrokerService(registry);
+
+        BrokerService quotation_service_broker = (BrokerService) UnicastRemoteObject.exportObject(broker_service,0);
 
         // Register the object with the RMI Registry
-        registry.bind(Constants.DODGY_DRIVERS_SERVICE, quotationService);
+        registry.bind(Constants.BROKER_SERVICE, quotation_service_broker);
         
         System.out.println("STOPPING SERVER SHUTDOWN");
 
