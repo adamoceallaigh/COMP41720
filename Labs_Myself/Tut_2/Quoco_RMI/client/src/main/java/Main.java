@@ -1,48 +1,17 @@
-// Imports and Variable Declarations
 
-import java.rmi.AlreadyBoundException;
+// Imports
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.rmi.server.UnicastRemoteObject;
 import java.text.NumberFormat;
-
 import service.core.BrokerService;
 import service.core.ClientInfo;
 import service.core.Quotation;
-import service.core.QuotationService;
 import service.core.Constants;
-// import auldfellas.AFQService;
-// import dodgydrivers.DDQService;
-// import girlpower.GPQService;
-// import broker.*;
 
 public class Main {
    
-	
-	// static {
-	// 	BrokerService local_broker_service = new LocalBrokerService();
-	// 	QuotationService afq_service = new AFQService();
-	// 	QuotationService ddq_service = new DDQService();
-	// 	QuotationService gpq_service = new GPQService();
-	// 	try {
-	// 		BrokerService broker_service = (BrokerService) UnicastRemoteObject.exportObject(local_broker_service,0);
-	// 		QuotationService quotation_service_afq = (QuotationService) UnicastRemoteObject.exportObject(afq_service, 0);
-	// 		QuotationService quotation_service_ddq = (QuotationService) UnicastRemoteObject.exportObject(afq_service, 0);
-	// 		QuotationService quotation_service_gpq = (QuotationService) UnicastRemoteObject.exportObject(afq_service, 0);
-			
-	// 		registry.bind(Constants.BROKER_SERVICE , broker_service);
-	// 		registry.bind(Constants.AULD_FELLAS_SERVICE, quotation_service_afq);
-	// 		registry.bind(Constants.DODGY_DRIVERS_SERVICE, quotation_service_ddq);
-	// 		registry.bind(Constants.GIRL_POWER_SERVICE, quotation_service_gpq);
-			
-
-	// 	} catch (RemoteException | AlreadyBoundException e) {
-	// 		e.printStackTrace();
-	// 	}
-	// }
-	
 	/**
 	 * This is the starting point for the application. Here, we must
 	 * get a reference to the Broker Service and then invoke the
@@ -55,14 +24,16 @@ public class Main {
 	 */
 	public static void main(String[] args) throws Exception {
 
+		// Connect to the RMI Registry already created by the broker
 		Registry registry = null;
         registry = LocateRegistry.getRegistry("localhost", 1099);
         
-
 		try{
+
+			// Locate the BrokerService in the RMI Registry
 			BrokerService brokerService = (BrokerService) registry.lookup(Constants.BROKER_SERVICE);
 
-			// Create the broker and run the test data
+			// Loop through each client in test data
 			for (ClientInfo info : clients) {
 				displayProfile(info);
 				
@@ -76,7 +47,10 @@ public class Main {
 			}
 
 		} catch (NotBoundException | RemoteException e){
+			
+			// Error Handling
 			System.out.println(e);
+
 		}
  
 	}
