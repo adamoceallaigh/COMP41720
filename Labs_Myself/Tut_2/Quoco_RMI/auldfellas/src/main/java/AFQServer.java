@@ -2,8 +2,6 @@
 // Imports
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
-import auldfellas.AFQService;
-import core.*;
 
 public class AFQServer {
    
@@ -11,18 +9,24 @@ public class AFQServer {
 
       // Variable Declarations
      QuotationService afqService = (QuotationService) new AFQService();
+     String host = "localhost";
 
      try {
         
         // Connect to the RMI Registry already created by the broker
         Registry registry = null;
-        registry = LocateRegistry.getRegistry("localhost", 1099); 
+
+        // Check if argument passed in, if not use localhost for registry
+        if(args.length != 0 ) host = args[0]; 
+        registry = LocateRegistry.getRegistry(host, 1099); 
 
         // Export the stub for the Auldfellas Quotation Service object
         QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(afqService,0);
 
-        // Register and Label the object with the RMI Registry 
-        registry.bind(Constants.AULD_FELLAS_SERVICE, quotationService);
+        // Ask the broker to register and label the AFService with registry
+        BrokerService broker_service = (BrokerService) registry.lookup(Constants.BROKER_SERVICE);
+        broker_service.registerService(Constants.AULD_FELLAS_SERVICE, quotationService);
+
         
         // Signalling that server is operational
         System.out.println("Stopping Server Shutdown");

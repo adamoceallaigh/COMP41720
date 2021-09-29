@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.text.NumberFormat;
-import core.*;
+;
 
 public class Main {
    
@@ -21,12 +21,18 @@ public class Main {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		// Connect to the RMI Registry already created by the broker
-		Registry registry = null;
-        registry = LocateRegistry.getRegistry("localhost", 1099);
-        
+		// Variable Declarations
+		String host = "localhost";
+		
 		try{
 
+			// Connect to the RMI Registry already created by the broker
+			Registry registry = null;
+
+			// Check if argument passed in, if not use localhost for registry
+			if(args.length != 0 ) host = args[0]; 
+			registry = LocateRegistry.getRegistry(host, 1099); 
+			
 			// Locate the BrokerService in the RMI Registry
 			BrokerService brokerService = (BrokerService) registry.lookup(Constants.BROKER_SERVICE);
 

@@ -17,6 +17,7 @@
             <groupId>Labs</groupId>
             <artifactId>core</artifactId>
             <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
         
 

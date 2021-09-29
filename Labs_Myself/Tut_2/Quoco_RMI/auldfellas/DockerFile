@@ -1,3 +1,3 @@
 FROM openjdk:8-jre-alpine
-COPY target/auldfellas-1.0.jar /auldfellas-1.0.jar
-CMD ["/usr/bin/java", "-cp", "/auldfellas-1.0.jar", "AFQServer", "mybroker"]
+COPY target/auldfellas-1.0-jar-with-dependencies.jar /auldfellas-1.0-jar-with-dependencies.jar
+CMD ["/usr/bin/java", "-jar", "/auldfellas-1.0-jar-with-dependencies.jar", "localhost"]

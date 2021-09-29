@@ -6,7 +6,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.util.LinkedList;
 import java.util.List;
-import core.*;
+;
 
 
 public class LocalBrokerService implements BrokerService, Serializable{
@@ -40,5 +40,20 @@ public class LocalBrokerService implements BrokerService, Serializable{
 
 		return quotations;
     }
+
+    @Override
+    public void registerService(String name, java.rmi.Remote service) throws java.rmi.RemoteException, NotBoundException {
+        try {
+
+            // Registry binds incoming service
+            this.service_registry.bind(name, service);
+
+        } catch (Exception e) { 
+
+            // Error Handling
+            e.printStackTrace(); 
+        }
+    }
+    
     
 }

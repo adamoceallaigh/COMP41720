@@ -3,9 +3,6 @@
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
-import auldfellas.AFQService;
-import core.*;
-
 import org.junit.*;
 import static org.junit.Assert.assertNotNull;
 
@@ -22,10 +19,7 @@ public class AuldfellasUnitTest {
         try {
 
             // Create the RMI registry if not already created
-            if (LocateRegistry.getRegistry("localhost", 1099) != null) registry = LocateRegistry.createRegistry(1099);
-
-            // Else use the RMI Registry already created
-            registry = LocateRegistry.getRegistry("localhost", 1099);
+            registry = LocateRegistry.createRegistry(1099);
 
             // Export the stub for the Auldfellas Quotation Service object
             QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(afqService,0);

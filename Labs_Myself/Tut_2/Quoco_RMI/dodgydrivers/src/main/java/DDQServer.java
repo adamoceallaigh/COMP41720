@@ -2,8 +2,6 @@
 // Imports
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
-import core.*;
-import dodgydrivers.DDQService;
 
 public class DDQServer {
    
@@ -11,18 +9,23 @@ public class DDQServer {
 
       // Variable Declarations
      QuotationService ddqService = (QuotationService) new DDQService();
+     String host = "localhost";
 
      try {
 
         // Connect to the RMI Registry already created by the broker
         Registry registry = null;
-        registry = LocateRegistry.getRegistry("localhost", 1099);
+
+        // Check if argument passed in, if not use localhost for registry
+        if(args.length != 0 ) host = args[0]; 
+        registry = LocateRegistry.getRegistry(host, 1099); 
 
         // Export the stub for the DodgyDrivers Quotation Service object
         QuotationService quotationService = (QuotationService) UnicastRemoteObject.exportObject(ddqService,0);
 
-        // Register and Label the object with the RMI Registry 
-        registry.bind(Constants.DODGY_DRIVERS_SERVICE, quotationService);
+        // Ask the broker to register and label the AFService with registry
+        BrokerService broker_service = (BrokerService) registry.lookup(Constants.BROKER_SERVICE);
+        broker_service.registerService(Constants.DODGY_DRIVERS_SERVICE, quotationService);
         
         // Signalling that server is operational
         System.out.println("Stopping Server Shutdown");

@@ -1,6 +1,6 @@
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/core/Quotation.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/core/BrokerService.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/core/Constants.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/core/AbstractQuotationService.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/core/QuotationService.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/core/ClientInfo.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/Quotation.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/Constants.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/AbstractQuotationService.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/BrokerService.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/QuotationService.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/core/src/main/java/ClientInfo.java
