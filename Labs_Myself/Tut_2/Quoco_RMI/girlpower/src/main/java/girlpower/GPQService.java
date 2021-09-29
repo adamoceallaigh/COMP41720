@@ -1,9 +1,7 @@
 
 // Imports
 package girlpower;
-import service.core.AbstractQuotationService;
-import service.core.ClientInfo;
-import service.core.Quotation;
+import core.*;
 
 /**
  * Implementation of the Girlpower insurance quotation service.

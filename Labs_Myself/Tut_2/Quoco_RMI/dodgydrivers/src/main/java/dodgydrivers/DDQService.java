@@ -1,9 +1,7 @@
 
 // Imports
 package dodgydrivers;
-import service.core.AbstractQuotationService;
-import service.core.ClientInfo;
-import service.core.Quotation;
+import core.*;
 
 /**
  * Implementation of the DodgyDrivers insurance quotation service.

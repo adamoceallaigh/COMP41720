@@ -6,10 +6,7 @@ import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.util.LinkedList;
 import java.util.List;
-import service.core.BrokerService;
-import service.core.ClientInfo;
-import service.core.Quotation;
-import service.core.QuotationService;
+import core.*;
 
 
 public class LocalBrokerService implements BrokerService, Serializable{

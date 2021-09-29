@@ -2,16 +2,15 @@
 // Imports
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
+import core.*;
 import dodgydrivers.DDQService;
-import service.core.QuotationService;
-import service.core.Constants;
 
 public class DDQServer {
    
     public static void main(String[] args) {
 
       // Variable Declarations
-     QuotationService ddqService = new DDQService();
+     QuotationService ddqService = (QuotationService) new DDQService();
 
      try {
 

@@ -1,9 +1,7 @@
 
 // Imports
 package auldfellas;
-import service.core.AbstractQuotationService;
-import service.core.ClientInfo;
-import service.core.Quotation;
+import core.*;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.

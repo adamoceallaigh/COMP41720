@@ -3,11 +3,9 @@
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
-import service.core.Constants;
-import service.core.ClientInfo;
-import service.core.Quotation;
-import service.core.QuotationService;
 import auldfellas.AFQService;
+import core.*;
+
 import org.junit.*;
 import static org.junit.Assert.assertNotNull;
 
@@ -19,7 +17,7 @@ public class AuldfellasUnitTest {
     @BeforeClass
     public static void setup() {
 
-        QuotationService afqService = new AFQService();
+        QuotationService afqService = (QuotationService) new AFQService();
 
         try {
 

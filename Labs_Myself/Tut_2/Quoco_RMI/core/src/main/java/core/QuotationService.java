@@ -1,6 +1,6 @@
 
 // Imports
-package service.core;
+package core;
 
 /**
  * Interface to define the behaviour of a quotation service.

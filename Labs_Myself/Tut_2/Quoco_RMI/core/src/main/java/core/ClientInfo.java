@@ -1,6 +1,7 @@
 
 // Imports
-package service.core;
+package core;
+
 
 /**
  * Interface to define the state to be stored in ClientInfo objects

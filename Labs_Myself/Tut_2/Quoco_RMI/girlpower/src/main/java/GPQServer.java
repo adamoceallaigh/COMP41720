@@ -2,16 +2,15 @@
 // Imports
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
+import core.*;
 import girlpower.GPQService;
-import service.core.QuotationService;
-import service.core.Constants;
 
 
 public class GPQServer {
     public static void main(String[] args) {
 
          // Variable Declarations
-        QuotationService gpqService = new GPQService();
+        QuotationService gpqService = (QuotationService) new GPQService();
    
         try {
 

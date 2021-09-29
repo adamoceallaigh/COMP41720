@@ -1,6 +1,6 @@
 
 // Imports
-package service.core;
+package core;
 
 // Constants to be used in the program
 public interface Constants {

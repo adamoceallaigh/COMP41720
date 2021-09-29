@@ -3,15 +3,14 @@
 import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
 import auldfellas.AFQService;
-import service.core.QuotationService;
-import service.core.Constants;
+import core.*;
 
 public class AFQServer {
    
     public static void main(String[] args) {
 
       // Variable Declarations
-     QuotationService afqService = new AFQService();
+     QuotationService afqService = (QuotationService) new AFQService();
 
      try {
         

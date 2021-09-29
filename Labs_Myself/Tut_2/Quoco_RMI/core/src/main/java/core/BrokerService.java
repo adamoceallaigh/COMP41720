@@ -1,6 +1,6 @@
 
 // Imports
-package service.core;
+package core;
 import java.rmi.NotBoundException;
 import java.util.List;
 

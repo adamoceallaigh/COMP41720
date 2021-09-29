@@ -1,6 +1,6 @@
 
 // Imports
-package service.core;
+package core;
 import java.util.Random;
 
 public abstract class AbstractQuotationService implements QuotationService {
