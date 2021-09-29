@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="AuldfellasUnitTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="AuldfellasUnitTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+0"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/auldfellas"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="IE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI/auldfellas"/>
+    <property name="user.dir" value="/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_2/Quoco_RMI"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="17+0"/>
     <property name="os.arch" value="aarch64"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.2/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,6 +60,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="AuldfellasUnitTest" name="generateQuotation" time="0.004"/>
+  <testcase classname="AuldfellasUnitTest" name="generateQuotation" time="0.003"/>
   <testcase classname="AuldfellasUnitTest" name="connectionTest" time="0"/>
 </testsuite>
