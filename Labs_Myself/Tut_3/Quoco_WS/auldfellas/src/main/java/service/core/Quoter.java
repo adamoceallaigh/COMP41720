@@ -11,7 +11,7 @@ import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.Action;
 import javax.xml.ws.Endpoint;
 import javax.xml.ws.spi.http.HttpContext;
-import core.*;
+import com.sun.net.httpserver.HttpServer;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.
@@ -35,7 +35,6 @@ public class Quoter extends AbstractQuotationService {
 	 * 20% discount for less than 3 penalty points
 	 * 50% penalty (i.e. reduction in discount) for more than 60 penalty points 
 	 */
-	@Override
 	@WebMethod
 	public Quotation generateQuotation(ClientInfo info) {
 		// Create an initial quotation between 600 and 1200
