@@ -10,7 +10,8 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.Action;
 import javax.xml.ws.Endpoint;
-import javax.xml.ws.spi.http.HttpContext;
+import com.sun.net.httpserver.HttpContext;
+import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
 /**

@@ -32,7 +32,7 @@
             <version>2.3.3</version>
         </dependency>
         <dependency>
-            <groupId>Labs</groupId>
+            <groupId>quoco_ws</groupId>
             <artifactId>core</artifactId>
             <version>1.0</version>
         </dependency>
