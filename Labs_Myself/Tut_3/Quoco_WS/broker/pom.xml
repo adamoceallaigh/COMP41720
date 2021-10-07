@@ -1,11 +1,12 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>quoco.ws</groupId>
+    <groupId>quoco_ws</groupId>
     <artifactId>broker</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <properties>
+        <main.class>service.core.Broker</main.class>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>    
@@ -36,6 +37,17 @@
             <artifactId>core</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.sun.org.apache.xml.internal</groupId>
+            <artifactId>resolver</artifactId>
+            <version>20050927</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.jmdns</groupId>
+            <artifactId>jmdns</artifactId>
+            <version>3.4.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -45,7 +57,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>service.core.Quoter</mainClass>
+                    <mainClass>service.core.Broker</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -57,6 +69,26 @@
                     <genJWS>true</genJWS>
                     <sourceDestDir>src/main/java</sourceDestDir>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                    <phase>package</phase>
+                    <goals><goal>single</goal></goals>
+                    <configuration>
+                        <archive>
+                        <manifest>
+                            <mainClass>${main.class}</mainClass>
+                        </manifest>
+                        </archive>
+                        <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>

@@ -6,8 +6,10 @@
     <packaging>jar</packaging>
 
     <properties>
+        <main.class>service.core.Quoter</main.class>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <argLine>--illegal-access=permit</argLine>
     </properties>    
 
     <dependencies>
@@ -35,6 +37,13 @@
             <groupId>quoco_ws</groupId>
             <artifactId>core</artifactId>
             <version>1.0</version>
+            <!-- <scope>compile</scope> -->
+        </dependency>
+        <dependency>
+            <groupId>javax.jmdns</groupId>
+            <artifactId>jmdns</artifactId>
+            <version>3.4.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -45,7 +54,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>service.core.Quoter</mainClass>
+                    <mainClass>${main.class}</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -60,7 +69,7 @@
                     <configuration>
                         <archive>
                         <manifest>
-                            <mainClass>service.core.Quoter</mainClass>
+                            <mainClass>${main.class}</mainClass>
                         </manifest>
                         </archive>
                         <descriptorRefs>

@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>lab3</groupId>
-    <artifactId>quoco-ws</artifactId>
+    <groupId>quoco_ws</groupId>
+    <artifactId>main</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
     

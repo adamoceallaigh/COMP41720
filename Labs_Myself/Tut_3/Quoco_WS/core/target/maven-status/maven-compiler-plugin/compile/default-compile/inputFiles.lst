@@ -1,4 +1,3 @@
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/ClientInfo.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/AbstractQuotationService.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/Quotation.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/Constants.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/service/core/Quotation.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/service/core/AbstractQuotationService.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_3/Quoco_WS/core/src/main/java/service/core/ClientInfo.java

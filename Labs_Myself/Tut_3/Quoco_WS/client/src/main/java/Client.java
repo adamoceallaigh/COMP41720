@@ -1,31 +1,70 @@
+
+// Imports
+import java.net.URL;
 import java.text.NumberFormat;
+import javax.xml.namespace.QName;
+import javax.xml.ws.Service;
+import service.core.*;
 
 public class Client {
 
     public static void main(String[] args) {
         try {
-            String host = "localhost";
-            int port = 9001;
-            // More Advanced flag-based configuration
-            // [ copy this from the ws-quote example client ]
-        
-            URL wsdlUrl = new
-            URL("http://" + host + ":" + port + "/quotation?wsdl");
-            QName serviceName =
-            new QName("http://core.service/", "QuoterService");
-            Service service = Service.create(wsdlUrl, serviceName);
-            QName portName = new QName("http://core.service/", "QuoterPort");
-            QuoterService quotationService =
-            service.getPort(portName, QuoterService.class);
-            for (ClientInfo info : clients) {
-                displayProfile(info);
-       
-                Quotation quotation = quotationService.generateQuotation(info);
-                displayQuotation(quotation);
-                System.out.println("\n");
+
+			// Wait to delay connection before startup 
+            Thread.sleep(30000);
+
+			// Variables for process
+            String host = args.length > 0 ? args[0] : "0.0.0.0";
+            int port = 9000;
+            
+			
+            //  More Advanced flag-based configuration
+            for (int i=0; i < args.length; i++) {
+                switch (args[i]) {
+                    case "-h":
+                        host = args[++i];
+                        break;
+                    case "-p":
+                        port = Integer.parseInt(args[++i]);
+                        break;
+                    default:
+                        System.out.println("Unknown flag: " + args[i] +"\n");
+                        System.out.println("Valid flags are:");
+                        System.out.println("\t-h <host>\tSpecify the hostname of the target service");
+                        System.out.println("\t-p <port>\tSpecify the port number of the target service");
+                        System.exit(0);
+                }
             }
+
+			
+			// Construct Request to Broker
+            URL wsdlUrl = new URL("http://" + host + ":" + port + "/broker?wsdl");
+            QName serviceName = new QName("http://core.service/", "BrokerService");
+            Service service = Service.create(wsdlUrl, serviceName);
+            QName portName = new QName("http://core.service/", "BrokerPort");
+            BrokerService broker_service = service.getPort(portName, BrokerService.class);
+
+
+			// Loop through each client in test data
+			for (ClientInfo info : clients) {
+				displayProfile(info);
+				
+				// Retrieve quotations from the broker and display them...
+				for(Quotation quotation : broker_service.getQuotations(info)) {
+					displayQuotation(quotation);
+				}
+				
+				// Print a couple of lines between each client
+				System.out.println("\n");
+			}
+
+
         } catch (Exception e) {
+
+			// Error Handling
             e.printStackTrace();
+
         }
         
     }
