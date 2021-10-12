@@ -1,2 +1,2 @@
-DDQService.class
-DDQServer.class
+service/Receiver.class
+service/dodgydrivers/DDQService.class

@@ -1,3 +1,3 @@
-FROM openjdk:8-jre-alpine
-COPY target/dodgydrivers-1.0-jar-with-dependencies.jar /dodgydrivers-1.0-jar-with-dependencies.jar
-CMD /usr/bin/java -jar /dodgydrivers-1.0-jar-with-dependencies.jar ${SERVER_HOST}
+FROM openjdk:11.0.8-jre
+COPY target/dodgydrivers-1.0-jar-with-dependencies.jar /service.dodgydrivers-1.0-jar-with-dependencies.jar
+CMD java -jar /service.dodgydrivers-1.0-jar-with-dependencies.jar ${SERVER_HOST}

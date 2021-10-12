@@ -1,13 +1,15 @@
-
+package service.core;
 // Imports
 
+
+import java.io.Serializable;
 
 /**
  * Class to store the quotations returned by the quotation services
  * @author Rem
  */
 
-public class Quotation implements java.io.Serializable {
+public class Quotation implements Serializable {
 
 	// Class variable declarations
 	public String company;

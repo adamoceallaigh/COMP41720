@@ -1,2 +1,2 @@
-BrokerServer.class
-LocalBrokerService.class
+service/LocalBrokerService.class
+service/Broker.class

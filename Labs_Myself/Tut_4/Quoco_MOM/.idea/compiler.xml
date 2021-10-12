@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client" />
+        <module name="core" />
+        <module name="dodgydrivers" />
+        <module name="broker" />
+        <module name="auldfellas" />
+        <module name="girlpower" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auldfellas" target="11" />
+      <module name="broker" target="11" />
+      <module name="client" target="11" />
+      <module name="core" target="11" />
+      <module name="dodgydrivers" target="11" />
+      <module name="girlpower" target="11" />
+      <module name="main" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

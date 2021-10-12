@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9256e7af-2f1a-48b8-8e6d-4ecdb3ac567a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/broker/src/main/java/service/Broker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker/src/main/java/service/LocalBrokerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/service/message/ClientApplicationMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dodgydrivers/src/main/java/service/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dodgydrivers/src/main/java/service/dodgydrivers/DDQService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/girlpower/src/main/java/service/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/girlpower/src/main/java/service/girlpower/GPQService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_3/Quoco_WS/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_3/Quoco_WS/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/src/main/java/service/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/src/main/java/service/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/src/main/java/service/auldfellas/AFQServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/src/main/java/service/auldfellas/AFQService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/src/main/java/service/auldfellas/AFQService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/src/test/java/AuldfellasUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/src/test/java/AuldfellasUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/auldfellas-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/auldfellas-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/auldfellas-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/auldfellas-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/surefire-reports/AuldfellasUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/surefire-reports/AuldfellasUnitTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/surefire-reports/TEST-AuldfellasUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/surefire-reports/TEST-AuldfellasUnitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auldfellas/target/test-classes/AuldfellasUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/auldfellas/target/test-classes/AuldfellasUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/broker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/broker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/src/main/java/BrokerServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/src/main/java/LocalBrokerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/broker-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/broker/target/broker-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/broker-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/broker/target/broker-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/classes/BrokerServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/classes/LocalBrokerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/broker/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/core/AbstractQuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/core/AbstractQuotationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/core/BrokerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/core/BrokerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/core/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/core/ClientInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/core/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/core/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/core/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/core/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/core/QuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/core/QuotationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/message/QuotationRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/message/QuotationRequestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/service/message/QuotationResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/service/message/QuotationResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/AbstractQuotationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/BrokerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/ClientInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/Quotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/QuotationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/src/main/java/DDQServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/src/main/java/DDQService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/src/test/java/DodgydriversUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/classes/DDQServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/classes/DDQService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/dodgydrivers-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/target/dodgydrivers-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/dodgydrivers-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/target/dodgydrivers-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/surefire-reports/DodgydriversUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/surefire-reports/TEST-DodgydriversUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dodgydrivers/target/test-classes/DodgydriversUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/src/main/java/GPQServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/src/main/java/GPQService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/src/test/java/GirlpowerUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/classes/GPQServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/classes/GPQService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/girlpower-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/target/girlpower-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/girlpower-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/target/girlpower-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/surefire-reports/GirlpowerUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/surefire-reports/TEST-GirlpowerUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/girlpower/target/test-classes/GirlpowerUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1zFM0sOocX2DEfzOQy3Zp9q9jlY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/girlpower/src/main/java" />
+      <recent name="$PROJECT_DIR$/dodgydrivers/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auldfellas/src/test/java/client_copy" />
+      <recent name="$PROJECT_DIR$/auldfellas/src/test/java" />
+      <recent name="$PROJECT_DIR$/auldfellas/src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9256e7af-2f1a-48b8-8e6d-4ecdb3ac567a" name="Changes" comment="" />
+      <created>1633739163004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633739163004</updated>
+      <workItem from="1633739164414" duration="37591000" />
+      <workItem from="1634034655990" duration="108000" />
+      <workItem from="1634034770383" duration="10474000" />
+      <workItem from="1634045314820" duration="751000" />
+      <workItem from="1634046088278" duration="322000" />
+      <workItem from="1634046424466" duration="117000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

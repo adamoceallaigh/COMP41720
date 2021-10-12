@@ -1,36 +1,38 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>Labs</groupId>
+    <groupId>quoco_mom</groupId>
     <artifactId>girlpower</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <properties>
-        <main.class>GPQServer</main.class>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+        <main.class>service.Receiver</main.class>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>    
 
     <dependencies>
-
         <dependency>
-            <groupId>Labs</groupId>
+            <groupId>quoco_mom</groupId>
             <artifactId>core</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.16.3</version>
             <scope>compile</scope>
         </dependency>
-
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-        </dependency> 
-
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.16.3</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Plugin used to run Java programs -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -61,5 +63,4 @@
             </plugin>
         </plugins>
     </build>
-    
 </project>

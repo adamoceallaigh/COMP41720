@@ -1,2 +1,2 @@
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_4/Quoco_MOM/broker/src/main/java/BrokerServer.java
-/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_4/Quoco_MOM/broker/src/main/java/LocalBrokerService.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_4/Quoco_MOM/broker/src/main/java/service/LocalBrokerService.java
+/Users/adamoceallaigh/Desktop/College/Distributed_Systems/Labs_Myself/Tut_4/Quoco_MOM/broker/src/main/java/service/Broker.java

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc6a297b-a8e0-4d6f-bbb3-c75bf123f0ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/main/java/service/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/main/java/service/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/main/java/service/auldfellas/AFQServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/main/java/service/auldfellas/AFQService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/main/java/service/auldfellas/AFQService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/test/java/AuldfellasUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/src/test/java/AuldfellasUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/auldfellas-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/auldfellas-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/auldfellas-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/auldfellas-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/surefire-reports/AuldfellasUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/surefire-reports/TEST-AuldfellasUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/auldfellas/target/test-classes/AuldfellasUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/src/main/java/BrokerServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/src/main/java/LocalBrokerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/broker-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/broker-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/broker-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/broker-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/classes/BrokerServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/classes/LocalBrokerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/broker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/client-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/client-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/client-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/client-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/core/AbstractQuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/core/AbstractQuotationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/core/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/core/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/message/QuotationRequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/message/QuotationRequestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/message/QuotationResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/src/main/java/service/message/QuotationResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/classes/AbstractQuotationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/classes/BrokerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/classes/ClientInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/classes/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/classes/Quotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/classes/QuotationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/core-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/src/main/java/DDQServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/src/main/java/DDQService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/src/test/java/DodgydriversUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/classes/DDQServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/classes/DDQService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/dodgydrivers-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/dodgydrivers-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/dodgydrivers-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/dodgydrivers-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/surefire-reports/DodgydriversUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/surefire-reports/TEST-DodgydriversUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/dodgydrivers/target/test-classes/DodgydriversUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/src/main/java/GPQServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/src/main/java/GPQService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/src/test/java/GirlpowerUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/classes/GPQServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/classes/GPQService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/girlpower-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/girlpower-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/girlpower-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/girlpower-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/surefire-reports/GirlpowerUnitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/surefire-reports/TEST-GirlpowerUnitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/girlpower/target/test-classes/GirlpowerUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tut_4/Quoco_MOM/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1z5SWEZ1SaUhy9aLFaxsUXtvnHC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/girlpower" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/girlpower" />
+      <recent name="$PROJECT_DIR$/dodgydrivers" />
+      <recent name="$PROJECT_DIR$/core" />
+      <recent name="$PROJECT_DIR$/auldfellas" />
+      <recent name="$PROJECT_DIR$/broker" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc6a297b-a8e0-4d6f-bbb3-c75bf123f0ae" name="Changes" comment="" />
+      <created>1633436485040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633436485040</updated>
+      <workItem from="1633436486302" duration="1826000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
