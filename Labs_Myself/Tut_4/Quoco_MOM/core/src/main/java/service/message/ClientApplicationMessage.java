@@ -1,11 +1,10 @@
-package service.message;
 
+// Imports
+package service.message;
 import service.core.ClientInfo;
 import service.core.Quotation;
-
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ClientApplicationMessage implements Serializable {
     public long client_application_message_id;

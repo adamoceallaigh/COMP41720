@@ -2,18 +2,13 @@
 // Imports
 import org.apache.activemq.ActiveMQConnectionFactory;
 import service.core.ClientInfo;
-import service.core.Constants;
 import service.core.Quotation;
 import service.message.ClientApplicationMessage;
 import service.message.QuotationRequestMessage;
-import service.message.QuotationResponseMessage;
-
 import javax.jms.*;
 import java.text.NumberFormat;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 
 /*
@@ -54,7 +49,7 @@ public class Main {
          }
 
         // Sets up Connection Factory on TCP port of ActiveMQ
-        ConnectionFactory factory = new ActiveMQConnectionFactory("failover://tcp://"+host+":61616");
+        ConnectionFactory factory = new ActiveMQConnectionFactory("failover://tcp://"+host+":"+port+"");
 
         // Allows Serialization of Object from Classes
         ((ActiveMQConnectionFactory) factory).setTrustAllPackages(true);
@@ -87,25 +82,47 @@ public class Main {
             while (true){
                 try{
 
+                    // Get the next message from the Responses queue
                     Message final_quotation_message = response_consumer.receive();
 
+                    // Check it is the right type of message
                     if (final_quotation_message instanceof ObjectMessage) {
+
+                        // It’s an Object Message
                         Object content = ((ObjectMessage) final_quotation_message).getObject();
+
+
                         if (content instanceof ClientApplicationMessage) {
+
+                            // It’s a ClientApplicationMessage
                             ClientApplicationMessage final_quotation_response = (ClientApplicationMessage) content;
+
+                            // Receive the id of message from cache
                             ClientInfo info = cache.get(final_quotation_response.client_application_message_id);
                             displayProfile(info);
 
+                            /*
+                                1. Loop through Client Application Message's Quotations Array, 
+                                2. Display Quotation
+                            */
                             for (Quotation quotation: final_quotation_response.quotations ){
                                 displayQuotation(quotation);
                             }
 
+
                             System.out.println("\n");
+
                         }
+
+                        // Acknowledge the quotation response has been received
                         final_quotation_message.acknowledge();
+
                     } else {
+
+                        // Error Handling
                         System.out.println("Unknown message type: " +
                                 final_quotation_message.getClass().getCanonicalName());
+
                     }
 
                 } catch (Exception e) {

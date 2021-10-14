@@ -86,14 +86,13 @@ public class Broker {
 
 
 
+             /*
+                Listen constantly to Requests Queue for Quotation Requests
+                - If received, send onto Applications topic
+            */
             new Thread(() -> {
                 while(true){
                     try{
-
-                        /*
-                            Listen constantly to Requests Queue for Quotation Requests
-                            - If received, send onto Applications topic
-                        */
 
                         // Get the next message from the Requests queue
                         Message received_request_message = requests_consumer.receive();
@@ -150,15 +149,13 @@ public class Broker {
             }).start();
 
 
-
+             /*
+                Listen constantly to Quotations Queue for Quotation Responses
+                - If received, send onto response queue
+            */
             new Thread(() -> {
                 while(true){
                     try{
-
-                    /*
-                        Listen constantly to Quotations Queue for Quotation Responses
-                        - If received, send onto response queue
-                    */
 
                         // Get the next message from the Quotations queue
                         Message received_quotation_response = quotations_consumer.receive();
