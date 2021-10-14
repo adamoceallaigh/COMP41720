@@ -1,12 +1,12 @@
- package service;
+ 
+ // Imports
+package service;
 
- import org.apache.activemq.ActiveMQConnectionFactory;
- import service.auldfellas.AFQService;
-
- import javax.jms.*;
- import service.core.Quotation;
- import service.message.QuotationRequestMessage;
- import service.message.QuotationResponseMessage;
+import javax.jms.*;
+import org.apache.activemq.ActiveMQConnectionFactory;
+import service.auldfellas.AFQService;
+import service.core.Quotation;
+import service.message.*;
 
  public class Receiver {
 

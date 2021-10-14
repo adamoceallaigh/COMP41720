@@ -5,8 +5,7 @@ package service;
 import service.dodgydrivers.DDQService;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import service.core.Quotation;
-import service.message.QuotationRequestMessage;
-import service.message.QuotationResponseMessage;
+import service.message.*;
 import javax.jms.*;
 
 public class Receiver {

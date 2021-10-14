@@ -1,3 +1,4 @@
-FROM openjdk:8-jre-alpine
-COPY target/auldfellas-1.0-jar-with-dependencies.jar /service.dodgydrivers-1.0-jar-with-dependencies.jar
-CMD /usr/bin/java -jar /service.dodgydrivers-1.0-jar-with-dependencies.jar ${SERVER_HOST}
+FROM openjdk:11.0.8-jre
+ENV SERVER_HOST localhost
+COPY target/auldfellas-1.0-jar-with-dependencies.jar /server.jar
+CMD sleep 7; java -cp /server.jar service.Receiver ${SERVER_HOST}

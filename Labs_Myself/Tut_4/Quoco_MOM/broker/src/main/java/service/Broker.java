@@ -1,15 +1,10 @@
-package service;
 // Imports
+package service;
 import org.apache.activemq.ActiveMQConnectionFactory;
-import service.core.ClientInfo;
-import service.core.Quotation;
 import service.message.*;
 
 import javax.jms.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 
 
 /*
@@ -31,9 +26,9 @@ import java.util.List;
 
 
 
-public class Broker implements LocalBrokerService {
+public class Broker {
 
-    private static long SEED_ID = 0;
+    // Static instance Variable Declarations
     static HashMap<Long, ClientApplicationMessage> cache = new HashMap<>();
 
     public static void main(String[] args) {
@@ -42,8 +37,7 @@ public class Broker implements LocalBrokerService {
 
             // Variables for process
             String host = args.length > 0 ? args[0] : "0.0.0.0";
-            int port = 9000;
-            List<QuotationResponseMessage> quotations_final_all_services = new LinkedList<>();
+            int port = 61616;
 
             //  More Advanced flag-based configuration
             for (int i=0; i < args.length; i++) {
@@ -64,7 +58,7 @@ public class Broker implements LocalBrokerService {
             }
 
             // Sets up Connection Factory on TCP port of ActiveMQ
-            ConnectionFactory factory = new ActiveMQConnectionFactory("failover://tcp://"+host+":61616");
+            ConnectionFactory factory = new ActiveMQConnectionFactory("failover://tcp://"+host+":"+port+"");
 
             // Allows Serialization of Object from Classes
             ((ActiveMQConnectionFactory) factory).setTrustAllPackages(true);
@@ -90,6 +84,8 @@ public class Broker implements LocalBrokerService {
             // Start connection so messages can be transmitted across nodes
             connection.start();
 
+
+
             new Thread(() -> {
                 while(true){
                     try{
@@ -101,37 +97,42 @@ public class Broker implements LocalBrokerService {
 
                         // Get the next message from the Requests queue
                         Message received_request_message = requests_consumer.receive();
-                        System.out.println("Recieved Request");
 
+                        // Check it is the right type of message
                         if (received_request_message instanceof ObjectMessage) {
+
+                            // It’s an Object Message
                             Object content = ((ObjectMessage) received_request_message).getObject();
+
                             if (content instanceof QuotationRequestMessage) {
+
+                                // It’s a Quotation Request Message
                                 QuotationRequestMessage quotation_request = (QuotationRequestMessage) content;
                                 Message quotation_response_message = session.createObjectMessage(quotation_request);
 
-
-//                                System.out.println(cache.get(quotation_response_message).client_application_message_id);
-//                                System.out.println(quotation_request);
+                                // Set up ClientApplicationMessage in cache for service verification later
                                 if(!cache.containsKey(quotation_request.id)) {
                                     cache.put(quotation_request.id, new ClientApplicationMessage(quotation_request.id , quotation_request.info));
                                 }
 
+                                // Send quotation request message on to applications topic
                                 applications_producer.send(quotation_response_message);
 
-                                System.out.println(cache);
-
-                                // Wait for 10 seconds
-                                Thread.sleep(10000);
-
-
-                                // Check quotations array for service quotations received
+                                // Wait for 10 seconds - for service quotations received in other thread
+                                Thread.sleep(10000);    
 
                                 // Send Client Application Message back to Response Queue
                                 Message final_quotation_response_sent = session.createObjectMessage(cache.get(quotation_request.id));
                                 responses_producer.send(final_quotation_response_sent);
+
                             }
+
+                            // Acknowledge the quotation request has been received
                             received_request_message.acknowledge();
+
                         } else {
+
+                            // Error Handling
                             System.out.println("Unknown received_quotation_response type: " +
                                     received_request_message.getClass().getCanonicalName());
                         }
@@ -161,25 +162,38 @@ public class Broker implements LocalBrokerService {
 
                         // Get the next message from the Quotations queue
                         Message received_quotation_response = quotations_consumer.receive();
-                        System.out.println("Recieved Quotation");
 
+                        // Check it is the right type of message
                         if (received_quotation_response instanceof ObjectMessage) {
-                            Object content = ((ObjectMessage) received_quotation_response).getObject();
-                            if (content instanceof QuotationResponseMessage) {
-                                QuotationResponseMessage quotation_response_object = (QuotationResponseMessage) content;
-//                            System.out.println(cache);
 
+                            // It’s an Object Message
+                            Object content = ((ObjectMessage) received_quotation_response).getObject();
+
+                            if (content instanceof QuotationResponseMessage) {
+
+                                // It’s a Quotation Response Message
+                                QuotationResponseMessage quotation_response_object = (QuotationResponseMessage) content;
+
+                                /*
+                                    Check quotation response id against cache
+                                        - If present, add quotation received to it's quotations array
+                                */
                               if(cache.get(quotation_response_object.id) != null){
                                   ClientApplicationMessage temporary_client_application_message = cache.get(quotation_response_object.id);
                                   temporary_client_application_message.quotations.add(quotation_response_object.quotation);
-                                  System.out.println(temporary_client_application_message.quotations);
                               }
 
                             }
+
+                            // Acknowledge the quotation response has been received
                             received_quotation_response.acknowledge();
+
                         } else {
+
+                            // Error Handling
                             System.out.println("Unknown received_quotation_response type: " +
                                     received_quotation_response.getClass().getCanonicalName());
+
                         }
 
 
@@ -204,8 +218,4 @@ public class Broker implements LocalBrokerService {
         }
     }
 
-    @Override
-    public List<Quotation> getQuotations(ClientInfo info) {
-        return null;
-    }
 }

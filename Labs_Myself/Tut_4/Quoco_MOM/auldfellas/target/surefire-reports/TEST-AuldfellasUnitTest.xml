@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="AuldfellasUnitTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="AuldfellasUnitTest" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.2/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher compile clean install package -U"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -U"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,6 +63,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="AuldfellasUnitTest" name="generateQuotation" time="0.002"/>
+  <testcase classname="AuldfellasUnitTest" name="generateQuotation" time="0.005"/>
   <testcase classname="AuldfellasUnitTest" name="connectionTest" time="0"/>
 </testsuite>
