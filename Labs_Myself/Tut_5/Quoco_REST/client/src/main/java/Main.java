@@ -1,7 +1,9 @@
 
 // Imports
+// import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
 
+import service.core.ClientApplication;
 import service.core.ClientInfo;
 import service.core.Quotation;
 import java.text.NumberFormat;
@@ -25,8 +27,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         // Variables for process
-         String host = args.length > 0 ? args[0] : "0.0.0.0";
-         int port = 9000;
+        String host = args.length > 0 ? args[0] : "0.0.0.0";
+        int port = 9000;
 
          //  More Advanced flag-based configuration
          for (int i=0; i < args.length; i++) {
@@ -50,12 +52,10 @@ public class Main {
          for (ClientInfo temp_client: clients) {
 
             ClientApplication initial_quotation_request = new ClientApplication(SEED_ID++, temp_client);
-            cache.put(initial_quotation_request.id, initial_quotation_request.info);
-            HttpEntity<ClientApplication> request = new HttpEntity<>(initial_quotation_request);
-            
+            cache.put(initial_quotation_request.client_application_message_id, initial_quotation_request.client_info);
+            // HttpEntity<ClientApplication> request = new HttpEntity<>(initial_quotation_request);
 
-
-            Object quotation = restTemplate.getForObject("http://localhost:8080/applications", request, ClientApplication.class);
+            Object quotation = restTemplate.getForObject("http://"+host+":"+ port +"/applications", ClientApplication.class);
             if (quotation instanceof ClientApplication) {
 
                 // It’s a ClientApplication

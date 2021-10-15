@@ -1,1 +1,3 @@
 service/girlpower/GPQService.class
+service/girlpower/NoSuchQuotationException.class
+service/Application.class

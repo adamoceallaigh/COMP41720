@@ -2,11 +2,11 @@
 package service.broker;
 
 import java.text.NumberFormat;
-import java.util.HashMap;
-import java.util.Map;
+// import java.util.HashMap;
+// import java.util.Map;
 
-import org.springframework.http.HttpEntity;
-import org.springframework.web.client.RestTemplate;
+// import org.springframework.http.HttpEntity;
+// import org.springframework.web.client.RestTemplate;
 
 import service.core.ClientInfo;
 import service.core.Quotation;
@@ -21,13 +21,13 @@ import service.core.Quotation;
 
 public class Application {
 
-    private Map<String, Quotation> quotations = new HashMap<>();
+    // private Map<String, Quotation> quotations = new HashMap<>();
 
     public static void main(String[] args) {
 
 
 
-        RestTemplate restTemplate = new RestTemplate();
+        // RestTemplate restTemplate = new RestTemplate();
 
         // for (ClientInfo temp_client: clients) {
 
