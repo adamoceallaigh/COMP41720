@@ -34,9 +34,9 @@ public class LocalBrokerService {
      GET 
     */ 
 
-    // Quotation By ID
-    @RequestMapping(value="/quotation" , method=RequestMethod.GET)
-    public ResponseEntity<ClientApplication> getQuotationByID(@RequestParam("client_application_id") Optional<String> client_application_id){
+    // Application By ID
+    @RequestMapping(value="/applications/{client_application_id}" , method=RequestMethod.GET)
+    public ResponseEntity<ClientApplication> getApplicationByID(@PathVariable("client_application_id") Optional<String> client_application_id){
 
         try {
 
@@ -70,9 +70,9 @@ public class LocalBrokerService {
     }
     
 
-    // All Quotations
-    @RequestMapping(value="/quotations" , method=RequestMethod.GET)
-    public ResponseEntity<List<ClientApplication>> getQuotations(){
+    // All Applications
+    @RequestMapping(value="/applications" , method=RequestMethod.GET)
+    public ResponseEntity<List<ClientApplication>> getApplications(){
 
         try {
 
