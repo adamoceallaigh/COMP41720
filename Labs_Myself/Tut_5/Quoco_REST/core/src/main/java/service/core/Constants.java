@@ -1,5 +1,5 @@
-package service.core;
 // Imports
+package service.core;
 
 
 // Constants to be used in the program

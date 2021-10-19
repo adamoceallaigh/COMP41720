@@ -1,6 +1,5 @@
-package service.core;
 // Imports
-
+package service.core;
 
 import java.io.Serializable;
 
@@ -25,6 +24,8 @@ public class Quotation implements Serializable {
 
 	public Quotation(){}
 
+
+	// Getters and Setters
 
 	public String getCompany(){
 		return this.company;

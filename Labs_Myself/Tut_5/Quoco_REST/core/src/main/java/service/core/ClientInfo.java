@@ -4,7 +4,7 @@ package service.core;
 
 
 /**
- * Interface to define the state to be stored in ClientInfo objects
+ *  Class to define the state to be stored in ClientInfo objects
  * @author Rem
  */
 
@@ -33,6 +33,7 @@ public class ClientInfo implements java.io.Serializable {
 	public ClientInfo() {}
 
 
+	// Getters and Setters
 
 	public String getName() {
 		return this.name;

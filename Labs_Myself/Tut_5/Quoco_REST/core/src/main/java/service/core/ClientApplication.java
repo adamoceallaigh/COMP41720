@@ -14,5 +14,7 @@ public class ClientApplication {
         this.quotations = new ArrayList<>();
     }
 
+    public ClientApplication(){}
+
 
 }

@@ -90,6 +90,10 @@ import service.core.Quotation;
 
     public Quotation getResource(@PathVariable("reference") String reference) {
 
+        /* 
+			Check if reference is in quotations array
+			- If not, throw Exception
+		*/
        Quotation quotation = quotations.get(reference);
        if (quotation == null) throw new NoSuchQuotationException();
        return quotation;
@@ -107,8 +111,14 @@ import service.core.Quotation;
 
    public ResponseEntity<Quotation> createQuotation(@RequestBody ClientInfo info) throws URISyntaxException {
 
+        /*
+			1. Create New Quotation
+			2. Add Quotation Reference to Quotations Array
+		*/
        Quotation quotation = generateQuotation(info);
        quotations.put(quotation.getReference(), quotation);
+
+       // Return New Quotation
        String path = ServletUriComponentsBuilder.fromCurrentContextPath().build().toUriString()+ "/quotations/"+quotation.getReference();
        HttpHeaders headers = new HttpHeaders();
        headers.setLocation(new URI(path));

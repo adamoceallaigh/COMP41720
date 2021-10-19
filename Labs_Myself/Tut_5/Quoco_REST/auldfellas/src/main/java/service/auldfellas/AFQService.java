@@ -1,24 +1,13 @@
-package service.auldfellas; // Imports
 
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+// Imports
+package service.auldfellas; 
+import java.net.*;
+import java.util.*;
+import org.springframework.http.*;
+import service.core.*;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import service.core.AbstractQuotationService;
-import service.core.ClientInfo;
-import service.core.Quotation;
 
 /**
   * Implementation of the AuldFellas insurance quotation service.
@@ -87,16 +76,19 @@ import service.core.Quotation;
     */ 
 
     // Reference for Quotation
+	@RequestMapping(value="/quotations/{reference}",method=RequestMethod.GET)
 
-     @RequestMapping(value="/quotations/{reference}",method=RequestMethod.GET)
+	public Quotation getResource(@PathVariable("reference") String reference) {
 
-     public Quotation getResource(@PathVariable("reference") String reference) {
+		/* 
+			Check if reference is in quotations array
+			- If not, throw Exception
+		*/
+		Quotation quotation = quotations.get(reference);
+		if (quotation == null) throw new NoSuchQuotationException();
+		return quotation;
 
-        Quotation quotation = quotations.get(reference);
-        if (quotation == null) throw new NoSuchQuotationException();
-        return quotation;
-
-     } 
+	} 
 
     
     /*
@@ -104,15 +96,20 @@ import service.core.Quotation;
     */
 
     // New Quotation
-
     @RequestMapping(value="/quotations",method=RequestMethod.POST)
 
     public ResponseEntity<Quotation> createQuotation(@RequestBody ClientInfo info) throws URISyntaxException {
 
+		/*
+			1. Create New Quotation
+			2. Add Quotation Reference to Quotations Array
+		*/
         Quotation quotation = generateQuotation(info);
         quotations.put(quotation.getReference(), quotation);
-        String path = ServletUriComponentsBuilder.fromCurrentContextPath().
-        build().toUriString()+ "/quotations/"+quotation.getReference();
+		
+
+		// Return New Quotation
+        String path = ServletUriComponentsBuilder.fromCurrentContextPath().build().toUriString()+ "/quotations/"+quotation.getReference();
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(new URI(path));
         return new ResponseEntity<>(quotation, headers, HttpStatus.CREATED);

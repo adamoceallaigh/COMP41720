@@ -1,11 +1,8 @@
 
 // Imports
-// import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
-
-import service.core.ClientApplication;
-import service.core.ClientInfo;
-import service.core.Quotation;
+import service.core.*;
 import java.text.NumberFormat;
 import java.util.HashMap;
 import java.util.Map;
@@ -13,14 +10,13 @@ import java.util.Map;
 
 /*
  * Client's Job
- *  - Set up Requests Queue ( producer )
- *  - Listen to the Response Queue ( consumer )
- *  - Match Request ID with Response ID
- *  - Display Quotations, if received
+ *  - Request Quotations for each of clients from Broker 
+ *  - Display Quotations 
  */
 
 public class Main {
 
+    // Static instance variables
     private static long SEED_ID = 0;
     private static Map<Long, ClientInfo> cache = new HashMap<>();
 
@@ -28,7 +24,7 @@ public class Main {
 
         // Variables for process
         String host = args.length > 0 ? args[0] : "0.0.0.0";
-        int port = 9000;
+        int port = 8080;
 
          //  More Advanced flag-based configuration
          for (int i=0; i < args.length; i++) {
@@ -49,13 +45,21 @@ public class Main {
          }
 
          RestTemplate restTemplate = new RestTemplate();
+
+         // Looping through clients array
          for (ClientInfo temp_client: clients) {
 
+            /*
+                1. Make and Add new Client Application to cache
+                2. Make new request with ClientApplication aforementioned
+            */
             ClientApplication initial_quotation_request = new ClientApplication(SEED_ID++, temp_client);
             cache.put(initial_quotation_request.client_application_message_id, initial_quotation_request.client_info);
-            // HttpEntity<ClientApplication> request = new HttpEntity<>(initial_quotation_request);
+            HttpEntity<ClientApplication> request = new HttpEntity<>(initial_quotation_request);
 
-            Object quotation = restTemplate.getForObject("http://"+host+":"+ port +"/applications", ClientApplication.class);
+
+            // Retrieve Object back from broker
+            Object quotation = restTemplate.postForObject("http://"+host+":"+ port +"/applications", request,  ClientApplication.class);
             if (quotation instanceof ClientApplication) {
 
                 // It’s a ClientApplication
