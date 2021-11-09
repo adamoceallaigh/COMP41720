@@ -1,0 +1,84 @@
+version: '3'
+services:
+  activemq:
+    image: rmohr/activemq:latest
+    container_name: activemq
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+  broker:
+    build: ./broker
+    container_name: broker
+    depends_on:
+      - activemq
+    environment:
+      - SERVER_HOST=activemq
+  auldfellas:
+    build: ./auldfellas
+    container_name: auldfellas
+    depends_on:
+      - activemq
+    environment:
+      - SERVER_HOST=activemq
+  dodgydrivers:
+    build: ./dodgydrivers
+    container_name: dodgydrivers
+    depends_on:
+      - activemq
+    environment:
+      - SERVER_HOST=activemq
+  girlpower:
+    build: ./girlpower
+    container_name: girlpower
+    depends_on:
+      - activemq
+    environment:
+      - SERVER_HOST=activemq
+
+version: '3'
+
+services:
+  broker:
+    build: ./broker
+    container_name: broker_akka
+    network_mode: host
+  auldfella:
+    build: ./auldfellas
+    container_name: auldfellas_akka
+    hostname: auldfellas
+    environment:
+      - SERVER_HOST=broker
+    depends_on:
+      - broker
+    network_mode: host
+  dodgydrivers:
+    build: ./dodgydrivers
+    container_name: dodgydrivers_akka
+    hostname: dodgydrivers
+    environment:
+      - SERVER_HOST=broker
+    depends_on:
+      - broker
+    network_mode: host
+  girlpower:
+    build: ./girlpower
+    container_name: girlpower_akka
+    hostname: girlpower
+    environment:
+      - SERVER_HOST=broker
+    depends_on:
+      - broker
+    network_mode: host
+  client:
+    build: ./client
+    container_name: client_akka
+    hostname: client
+    environment:
+      - SERVER_HOST=broker
+    depends_on:
+      - broker
+      - auldfellas
+      - dodgydrivers
+      - girlpower
+    network_mode: host
+

@@ -1,0 +1,4 @@
+service/Main.class
+service/girlpower/GPQService.class
+service/actor/Init.class
+service/actor/Quoter.class

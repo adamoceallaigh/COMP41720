@@ -1,0 +1,10 @@
+service/core/QuotationService.class
+service/core/Constants.class
+service/message/ApplicationRequest.class
+service/message/QuotationResponse.class
+service/core/ClientInfo.class
+service/core/AbstractQuotationService.class
+service/message/MyInterface.class
+service/message/QuotationRequest.class
+service/core/Quotation.class
+service/message/ApplicationResponse.class
